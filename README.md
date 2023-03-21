@@ -1,1 +1,1 @@
-# react-organo
+# react-organograma

@@ -1,8 +1,12 @@
 import React from 'react'
 import FieldText from '../input/FieldText'
+import Select from '../select/slect'
 import "./form.css"
 
 export default function Form() {
+
+  const times = ['Programacao', 'Front-End', 'Back-End', 'Data Science', 'UX e Design', 'mobile', 'Inocacao & gestao']
+
   return (
     <section className="container">
       <form className="container__form">
@@ -10,6 +14,7 @@ export default function Form() {
         <FieldText label="Nome" placeholder="Digite seu nome" id="nome"/>
         <FieldText label="Cargo" placeholder="Digite seu cargo" id="cargo"/>
         <FieldText label="Imagem" placeholder="Digite o endereco da imagem" id="imagem"/>
+        <Select label="Time" options={times}/>
       </form>
     </section>
   )

@@ -7,7 +7,7 @@ export default function FieldText(props: Iinput) {
   return (
     <div className="field">
       <label htmlFor={props.id}>{props.label}:</label>
-      <input type="text" placeholder={placeholderEdit} id={props.id}/>
+      <input type="text" autoComplete='off' placeholder={placeholderEdit} id={props.id}/>
     </div>
   )
 }

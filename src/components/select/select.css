@@ -1,0 +1,14 @@
+.selecao label{
+  display: block;
+  margin: 8px;
+  font-size: 24px;
+}
+
+.selecao select {
+  background-color: #FFFF;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  padding: 24px ;
+}

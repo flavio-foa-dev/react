@@ -1,15 +1,14 @@
 import "./App.css"
 
 import Banner from './components/banner/banner'
+import Form from "./components/form/form"
 
 function App() {
 
   return (
     <div className="App">
       <Banner/>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Form/>
     </div>
   )
 }

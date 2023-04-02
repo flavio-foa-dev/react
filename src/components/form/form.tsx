@@ -1,4 +1,5 @@
 import React from 'react'
+import Btn from '../btn/btn'
 import FieldText from '../input/FieldText'
 import Select from '../select/slect'
 import "./form.css"
@@ -15,6 +16,7 @@ export default function Form() {
         <FieldText label="Cargo" placeholder="Digite seu cargo" id="cargo"/>
         <FieldText label="Imagem" placeholder="Digite o endereco da imagem" id="imagem"/>
         <Select label="Time" options={times}/>
+        <Btn title = "Criar Card"/>
       </form>
     </section>
   )

@@ -3,4 +3,8 @@ export default interface Iinput {
   placeholder: string;
   id: string;
   isRequired: boolean;
+  value: string;
+  fn: any;
+  card: object;
+  name:string;
 }

@@ -6,8 +6,12 @@ export default function Select(props: Iselect) {
   return (
     <div className="selecao">
       <label htmlFor="select">{props.label}</label>
-      <select id="select">
-        <option value="">Escolha</option>
+      <select
+        id="select"
+        value={props.value}
+        onChange={props.fn}
+      >
+        <option>Escolha</option>
         {props.options.map(option => <option key={option}>{option}</option>)}
       </select>
     </div>

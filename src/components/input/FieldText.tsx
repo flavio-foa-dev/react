@@ -8,7 +8,7 @@ export default function FieldText(props: Iinput) {
 
   const placeholderEdit = `${props.placeholder}...`
 
-  function handleText(e:any){
+  function handleText(e: React.ChangeEvent<HTMLInputElement>){
     props.fn({...props.card, [e.target.name]: e.target.value})
 
   }

@@ -10,14 +10,15 @@ export default function Form(props: Iform) {
   const times = ['Programacao', 'Front-End', 'Back-End', 'Data Science', 'UX e Design', 'mobile', 'Inocacao & gestao']
   const [card, setcard]= useState({nome:"", cargo: "", img: "",time:""})
 
-  function handleSubmit(e: any){
-    e.preventDefault();
+  console.log(card)
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>){
+    e.preventDefault()
     props.fn(card)
   }
 
   return (
     <section className="container">
-      <form className="container__form" onSubmit={handleSubmit}>
+      <form className="container__form" onSubmit={(handleSubmit)}>
         <h2 className="container__subtitle">Preencha os dados para criar o card </h2>
         <FieldText
           isRequired={true}

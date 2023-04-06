@@ -1,16 +1,19 @@
 import React from 'react'
 import "./avatar.css"
+import IAvatar from './interface'
 
 
-export default function Avatar() {
+export default function Avatar(props:IAvatar) {
+  const infosAvatar = props.infos
+  console.log("inf", infosAvatar)
   return (
     <div className="container-avatar">
       <div className="cabecalho">
-       <img src="https://github.com/flavio-foa-dev.png" alt="foto Perfil"/>
+       <img src={infosAvatar.img} alt="foto Perfil"/>
       </div>
       <div className="rodape">
-        <h4>Flavio Andrade</h4>
-        <h3>Desenvolvedor</h3>
+        <h4>{infosAvatar.nome}</h4>
+        <h3>{infosAvatar.cargo}</h3>
       </div>
     </div>
   )

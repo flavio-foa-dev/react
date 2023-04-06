@@ -10,7 +10,7 @@ export default function Form(props: Iform) {
 
   const [card, setcard]= useState({nome:"", cargo: "", img: "",time:""})
 
-  console.log(card)
+
   function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
     props.fn(card)
@@ -29,6 +29,8 @@ export default function Form(props: Iform) {
           value={card.nome}
           fn={setcard}
           card={card}
+
+
         />
         <FieldText
           isRequired={true}

@@ -11,7 +11,7 @@ export default function Select(props: Iselect) {
         value={props.value}
         onChange={props.fn}
       >
-        <option>Escolha</option>
+        <option value="">Escolha</option>
         {props.options.map(option => <option key={option}>{option}</option>)}
       </select>
     </div>

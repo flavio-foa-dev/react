@@ -42,7 +42,7 @@ function App() {
 
 
 
-  const [users, setUsers] = useState<any[]>([
+  const [users, setUsers] = useState<any>([
     {
       img: "https://github.com/flavio-foa-dev.png",
       nome: "Flavio Andrade",
@@ -51,10 +51,12 @@ function App() {
     }
   ])
 
-  function addUser(card: object) {
-    setUsers([...users, card])
-  }
 
+  function addUser(card: object) {
+    debugger
+    setUsers([...users, card])
+
+  }
 
   return (
     <div className="App">
@@ -64,7 +66,7 @@ function App() {
         key={time.nome}
         time={time.nome}
         collorPrimary={time.corPrimaria}
-        avatar={users.filter((item) => item.time === time.nome )}
+        avatar={users.filter((item: { time: string }) => item.time === time.nome )}
         collorSecondary={time.corSecundaria} />)}
     </div>
   )

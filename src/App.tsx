@@ -42,7 +42,14 @@ function App() {
 
 
 
-  const [users, setUsers] = useState<object[]>([])
+  const [users, setUsers] = useState<any[]>([
+    {
+      img: "https://github.com/flavio-foa-dev.png",
+      nome: "Flavio Andrade",
+      cargo: "Tanker",
+      time:"Devops"
+    }
+  ])
 
   function addUser(card: object) {
     setUsers([...users, card])
@@ -53,7 +60,12 @@ function App() {
     <div className="App">
       <Banner/>
       <Form fn={(card:object)=> addUser(card)} times={times.map((time)=> time.nome)}/>
-      {times.map(time => <Time key={time.nome} time={time.nome} collorPrimary={time.corPrimaria} collorSecondary={time.corSecundaria} />)}
+      {times.map(time => <Time
+        key={time.nome}
+        time={time.nome}
+        collorPrimary={time.corPrimaria}
+        avatar={users.filter((item) => item.time === time.nome )}
+        collorSecondary={time.corSecundaria} />)}
     </div>
   )
 }

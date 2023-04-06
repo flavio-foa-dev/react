@@ -7,7 +7,7 @@ import Iform from './interface'
 
 export default function Form(props: Iform) {
 
-  const times = ['Programacao', 'Front-End', 'Back-End', 'Data Science', 'UX e Design', 'mobile', 'Inocacao & gestao']
+
   const [card, setcard]= useState({nome:"", cargo: "", img: "",time:""})
 
   console.log(card)
@@ -54,7 +54,7 @@ export default function Form(props: Iform) {
         />
         <Select
           label="Time"
-          options={times}
+          options={props.times}
           value={card.time}
           fn={(e:any)=>setcard({...card, time: e.target.value})}
         />

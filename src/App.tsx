@@ -48,12 +48,11 @@ function App() {
     setUsers([...users, card])
   }
 
-  console.log(users ,"App onde esta sendo chamado")
 
   return (
     <div className="App">
       <Banner/>
-      <Form fn={(card:object)=> addUser(card)}/>
+      <Form fn={(card:object)=> addUser(card)} times={times.map((time)=> time.nome)}/>
       {times.map(time => <Time key={time.nome} time={time.nome} collorPrimary={time.corPrimaria} collorSecondary={time.corSecundaria} />)}
     </div>
   )

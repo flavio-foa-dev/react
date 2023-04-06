@@ -5,10 +5,9 @@ import IAvatar from './interface'
 
 export default function Avatar(props:IAvatar) {
   const infosAvatar = props.infos
-  console.log("inf", infosAvatar)
   return (
     <div className="container-avatar">
-      <div className="cabecalho">
+      <div className="cabecalho" style={{backgroundColor: props.corFundo}}>
        <img src={infosAvatar.img} alt="foto Perfil"/>
       </div>
       <div className="rodape">

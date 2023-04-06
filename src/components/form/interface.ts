@@ -1,4 +1,5 @@
 export default interface Iform {
-  fn:Function
+  fn:any;
+  times:string[]
 
 }

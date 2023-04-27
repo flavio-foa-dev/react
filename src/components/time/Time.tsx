@@ -9,10 +9,16 @@ export default function Time(props: ITime) {
   return (
     // avatarInfos.length > 0 &&
     (avatarInfos.length > 0) ?
-    <section className="time" style={{backgroundColor: props.collorSecondary}}>
+    <section className="time" style={{backgroundColor: props.collorPrimary}}>
       <h3 style={{borderColor: props.collorPrimary}}>{props.time}</h3>
       <div className="time-avatares">
-        {avatarInfos.map((info: any ) => <Avatar corFundo={props.collorPrimary} infos={info} key={info.nome}/>)}
+        {avatarInfos.map((info: any ) => {
+          return <Avatar
+              corFundo={props.collorSecondary}
+              infos={info} key={info.nome}
+              deletar={props.deletar}
+            />
+        })}
       </div>
     </section>
     : null

@@ -9,7 +9,7 @@ export default function Avatar(props:IAvatar) {
   const infosAvatar = props.infos
   return (
     <div className="container-avatar">
-      <AiFillCloseCircle size={20} className="container-avatar__deleter" onClick={props.deletar}/>
+      <AiFillCloseCircle size={20} className="container-avatar__deleter" onClick={()=>props.deletar(infosAvatar.nome)}/>
       <div className="cabecalho" style={{backgroundColor: props.corFundo}}>
        <img src={infosAvatar.img} alt="foto Perfil"/>
       </div>

@@ -3,5 +3,7 @@ export default interface ITime {
   collorPrimary: string
   collorSecondary: string
   avatar:any
-  deletar: ()=>void;
+  deletar: (nome:string)=>void;
+  setCorPrimary: (cor:string, nome:string)=>void;
+  setCorSecondary: (cor:string, nome:string)=>void;
 }

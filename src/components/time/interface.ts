@@ -3,4 +3,5 @@ export default interface ITime {
   collorPrimary: string
   collorSecondary: string
   avatar:any
+  deletar: ()=>void;
 }

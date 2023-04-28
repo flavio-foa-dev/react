@@ -1,4 +1,5 @@
 export default interface Iinput {
+  type: string;
   label: string;
   placeholder: string;
   id: string;

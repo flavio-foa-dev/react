@@ -6,4 +6,5 @@ export default interface ITime {
   deletar: (nome:string)=>void;
   setCorPrimary: (cor:string, nome:string)=>void;
   setCorSecondary: (cor:string, nome:string)=>void;
+  fnFavoritar: (id:string)=>void;
 }

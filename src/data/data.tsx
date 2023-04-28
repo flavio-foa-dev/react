@@ -50,16 +50,16 @@ const usersInitial = [
     id: uuidv4(),
     favorito: true,
     nome: "Flavio Andrade",
+    cargo: 'Desenvolvedor de software e instrutor',
     img: "https://github.com/flavio-foa-dev.png",
-    cargo: "Tanker",
     time: timesInitial[0].nome
   },
   {
     id: uuidv4(),
     favorito: false,
-    nome: 'JULIANA AMOASEI',
-    cargo: 'Desenvolvedora de software e instrutora',
-    img: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    nome: 'Erick Andrade',
+    cargo: 'Desenvolvedor de software e instrutor',
+    img: 'https://github.com./erickbrdev.png',
     time: timesInitial[0].nome
   },
   {
@@ -68,14 +68,6 @@ const usersInitial = [
     nome: 'DANIEL ARTINE',
     cargo: 'Engenheiro de Software na Stone Age',
     img: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-    time: timesInitial[0].nome
-  },
-  {
-    id: uuidv4(),
-    favorito: false,
-    nome: 'GUILHERME LIMA',
-    cargo: 'Desenvolvedor Python e JavaScript na Alura',
-    img: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
     time: timesInitial[0].nome
   },
   {

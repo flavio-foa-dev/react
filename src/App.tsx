@@ -22,7 +22,6 @@ function App() {
   }
 
   function setcollorPrimary(collor: string, nome:string) {
-    console.log("setcollorPrimary", collor, nome)
     setTimes(times.map((time:any) => {
       if (time.nome == nome){
         time.corPrimaria = collor
@@ -32,7 +31,6 @@ function App() {
   }
 
   function setcollorSecundary(collor: string, nome:string) {
-    console.log("setcollorSecundary", collor, nome)
     setTimes(times.map((time: any) => {
       if (time.nome == nome){
         time.corSecundaria = collor

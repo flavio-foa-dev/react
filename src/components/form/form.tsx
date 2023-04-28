@@ -29,6 +29,7 @@ export default function Form(props: Iform) {
         <h2 className="container__subtitle">Preencha os dados para criar o card </h2>
         <FieldText
           isRequired={true}
+          type="text"
           label="Nome"
           placeholder="Digite seu nome"
           id="nome"
@@ -39,6 +40,7 @@ export default function Form(props: Iform) {
         />
         <FieldText
           isRequired={true}
+          type="text"
           label="Cargo"
           placeholder="Digite seu cargo"
           id="cargo"
@@ -49,6 +51,7 @@ export default function Form(props: Iform) {
         />
         <FieldText
           isRequired={false}
+          type="text"
           label="Imagem"
           placeholder="Digite o endereco da imagem"
           id="imagem"
@@ -70,6 +73,7 @@ export default function Form(props: Iform) {
         <h2 className="container__subtitle">Preencha os dados para criar um novo time </h2>
         <FieldText
           isRequired={true}
+          type="text"
           label="Time"
           placeholder="Digite nome Time"
           id="novoTime"
@@ -80,6 +84,7 @@ export default function Form(props: Iform) {
         />
         <FieldText
           isRequired={true}
+          type="color"
           label="Cor"
           placeholder="Digite a cor"
           id="collor"

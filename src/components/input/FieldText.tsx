@@ -14,10 +14,10 @@ export default function FieldText(props: Iinput) {
   }
 
   return (
-    <div className="field">
+    <div className={`field field-${props.type}`}>
       <label htmlFor={props.id}>{props.label}:</label>
       <input
-        type="text"
+        type={props.type}
         value={props.value}
         autoComplete='off'
         placeholder={placeholderEdit}

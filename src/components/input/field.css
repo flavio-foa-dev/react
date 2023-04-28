@@ -18,3 +18,8 @@
   padding: 24px;
 
 }
+
+.field-color input{
+  height: 30px;
+  padding: 4px 24px
+}

@@ -4,7 +4,7 @@ import "./banner.css"
 export default function Banner() {
   return (
     <header className="banner">
-      <img src="../public/img/banner.png" />
+      <img src="../assets/banner.png" />
     </header>
   )
 }

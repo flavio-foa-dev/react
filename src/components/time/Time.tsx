@@ -27,8 +27,10 @@ export default function Time(props: ITime) {
         {avatarInfos.map((info: any ) => {
           return <Avatar
               corFundo={props.collorSecondary}
-              infos={info} key={info.nome}
+              infos={info}
+              key={info.id}
               deletar={props.deletar}
+              fnFavoritar={props.fnFavoritar}
             />
         })}
       </div>

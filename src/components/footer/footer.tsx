@@ -24,12 +24,8 @@ const Footer = () => {
        <section>
        <img src="../../public/img/logo.png" alt="" />
        </section>
-       <section>
-        <p>
-            Desenvolvido Por Flavio-foa.
-        </p>
-       </section>
-    </footer>)
+    </footer>
+    )
 }
 
 export default Footer

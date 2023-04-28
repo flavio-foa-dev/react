@@ -48,7 +48,7 @@ const timesInitial = [
 const usersInitial = [
   {
     id: uuidv4(),
-    favorito: false,
+    favorito: true,
     nome: "Flavio Andrade",
     img: "https://github.com/flavio-foa-dev.png",
     cargo: "Tanker",
@@ -80,7 +80,7 @@ const usersInitial = [
   },
   {
     id: uuidv4(),
-    favorito: false,
+    favorito: true,
     nome: 'PAULO SILVEIRA',
     cargo: 'Hipster e CEO da Alura',
     img: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
@@ -112,7 +112,7 @@ const usersInitial = [
   },
   {
     id: uuidv4(),
-    favorito: false,
+    favorito: true,
     nome: 'PAULO SILVEIRA',
     cargo: 'Hipster e CEO da Alura',
     img: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
@@ -144,7 +144,7 @@ const usersInitial = [
   },
   {
     id: uuidv4(),
-    favorito: false,
+    favorito: true,
     nome: 'PAULO SILVEIRA',
     cargo: 'Hipster e CEO da Alura',
     img: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
@@ -176,7 +176,7 @@ const usersInitial = [
   },
   {
     id: uuidv4(),
-    favorito: false,
+    favorito: true,
     nome: 'PAULO SILVEIRA',
     cargo: 'Hipster e CEO da Alura',
     img: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',

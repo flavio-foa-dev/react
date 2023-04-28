@@ -22,4 +22,9 @@
 - Corrigir erros;
 - Depurar o seu código com o debugger.
 
-quero dizer que este curso esta  D+  eu já conhecia um pouquinho . entretanto  contribui muito para meu aprendizado.  Ter que obter dados que estão em várias camadas  e usá-los , pegar este conceito e fundamental.  não posso esquecer  que este curso esta com um grau elevado né, o Mestre Paulo Silveira
+- criar um ternário para renderizar de forma opcional;
+- renderizar condicionais de outras formas;
+- refatorar um componente sem atrapalhar a execução primária dele;
+- A importância de se refatorar um componente em projetos React.
+
+quero dizer que este curso esta  D+  eu já conhecia um pouquinho . entretanto  contribui muito para meu aprendizado.  Ter que obter dados que estão em várias camadas  e usá-los , pegar este conceito e fundamental.

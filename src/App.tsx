@@ -41,6 +41,18 @@ function App() {
     }))
   }
 
+  function handleFavorito(id: string) {
+    setUsers( users.map((user:any) => {
+      if (user.id === id){
+        user.favorito = !user.favorito
+      }
+      return user
+    }))
+
+
+
+  }
+
   return (
     <div className="App">
       <Banner/>
@@ -50,7 +62,8 @@ function App() {
       />
       {times.map((time:any )=>
         <Time
-          key={time.nome}
+          fnFavoritar={handleFavorito}
+          key={time.id}
           time={time.nome}
           avatar={users.filter((item: { time: string }) => item.time === time.nome )}
           collorPrimary={time.corPrimaria}

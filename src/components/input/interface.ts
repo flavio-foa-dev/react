@@ -5,7 +5,7 @@ export default interface Iinput {
   id: string;
   isRequired: boolean;
   value: string;
-  fn: any;
+  fn: ({}) => void;
   card: object;
   name:string;
 }

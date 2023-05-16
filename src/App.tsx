@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <Banner/>
+      <Banner src={""} alt={"banner"}/>
       <Form
         fn={(card:object)=> addUser(card)}
         times={times.map((time: any)=> time.nome)}

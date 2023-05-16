@@ -2,10 +2,15 @@ import React from 'react'
 import "./banner.css"
 import hero from '../../../public/hero.png'
 
-export default function Banner() {
+interface Ibanner {
+  src: string,
+  alt: string
+}
+
+export default function Banner({}:Ibanner) {
   return (
     <header className="banner">
-      <img src={hero}alt="hero" />
+      <img src={hero} alt="hero" />
     </header>
   )
 }
